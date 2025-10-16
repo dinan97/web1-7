@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan HTML</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 30px;}
+        h2 {text-align: center;}
+        table {width: 100%; border-collapse: collapse;}
+        th, td {border: 1px solid black; padding: 5px; text-align: center;}
+        th {background-color: #f2f2f2;}
+        fieldset {margin-top: 20px; padding: 10px; border: 1px solid #000;}
+        legend {font-weight: bold;}
+        label {display: inline-block; width: 150px;}
+        textarea {width: 300px; height: 60px;}
+        input[type="text"], input[type="number"] {width: 200px;}
+    </style>
+</head>
+<body>
+
+    <h2>Absensi Mahasiswa Teknik Informatika</h2>
+    <table>
+        <tr>
+            <th rowspan="2">NO</th>
+            <th rowspan="2">NPM</th>
+            <th rowspan="2">NAMA</th>
+            <th colspan="7">PERTEMUAN</th>
+        </tr>
+        <tr>
+            <th>1<br>9-Feb</th>
+            <th>2<br>16-Feb</th>
+            <th>3<br>23-Feb</th>
+            <th>4<br>2-Mar</th>
+            <th>5<br>9-Mar</th>
+            <th>6<br>16-Mar</th>
+            <th>7<br>23-Mar</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1111111111</td>
+            <td>Nyjah Huston</td>
+            <td>v</td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2222222222</td>
+            <td>Luan Olivera</td>
+            <td>v</td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3333333333</td>
+            <td>Yuto Horigome</td>
+            <td>v</td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2>Form Mahasiswa</h2>
+
+    <form>
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <label>Nama</label> : <input type="text"><br><br>
+            <label>NPM</label> : <input type="text"><br><br>
+            <label>Kelas</label> : 
+            <select>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select><br><br>
+            <label>Jenis Kelamin</label> : 
+            <input type="radio" name="gender">Pria
+            <input type="radio" name="gender">Wanita
+        </fieldset>
+
+        <fieldset>
+            <legend>Tempat Tinggal Mahasiswa</legend>
+            <label>Alamat</label> : <br>
+            <textarea></textarea><br><br>
+            <label>Kecamatan</label> : <input type="text"><br><br>
+            <label>Kabupaten/Kotamadya</label> : <input type="text"><br><br>
+            <label>Provinsi</label> : <input type="text"><br><br>
+            <label>Kode Pos</label> : <input type="number">
+        </fieldset>
+
+        <fieldset>
+            <legend>Lain-lainnya</legend>
+            <label>Bahasa Pemrograman</label> : <br>
+            <input type="checkbox"> C / C++
+            <input type="checkbox"> Go Lang
+            <input type="checkbox"> Python
+            <input type="checkbox"> Lainnya <br><br>
+            <input type="checkbox"> PHP
+            <input type="checkbox"> Javascript
+            <input type="checkbox"> Ruby
+            <br><br>
+
+            <label>Kegiatan</label> : <br>
+            <input type="checkbox"> Organisasi Kemahasiswaan
+            <input type="checkbox"> Bidang Olahraga
+            <input type="checkbox"> Lainnya <br><br>
+            <input type="checkbox"> Organisasi di Luar Kampus
+            <input type="checkbox"> Bidang Seni
+        </fieldset>
+
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
